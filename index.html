@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza-bestilling</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+    <h1>Pizza</h1>
+    <h2>Pizzabestilling</h2>
+        <div class="pick-container">
+            <h3>Type pizzabunn</h3>
+            <div class="box">
+                <label><input type="radio" name="q1" checked> Vanlig</label>
+                <label><input type="radio" name="q1"> Fullkorn</label>
+                <label><input type="radio" name="q1"> Glutenfri</label>
+            </div>
+        </div>
+        <div class="pick-container">
+            <h3>Topping</h3>
+            <div class="box">
+                <label><input type="checkbox" name ="p1" value="skinke"> Skinke</label>
+                <label><input type="checkbox" name ="p2" value="ost"> Ost</label>
+                <label><input type="checkbox" name ="p3" value="pepperoni"> Pepperoni</label>
+                <label><input type="checkbox" name ="p4" value="ananas"> Ananas</label>
+                <label><input type="checkbox" name ="p5" value="jalepeno"> Jalepeno</label>
+            </div>
+        </div>
+        <div class="pick-container">
+            <h3>Størrelse</h3>
+            <select id="storrelse">
+                <option value="ingen" selected>Velg</option>
+                <option value="liten">Liten</option>
+                <option value="medium">Medium</option>
+                <option value="stor">Stor</option>
+            </select>
+        </div>
+        <div class="pick-container">
+            <h3>Annet</h3>
+            <textarea id="text" name="textbox" rows="4" cols="50" placeholder="Skriv en tilbakemelding."></textarea>
+        </div>
+    <button>Send inn din bestilling</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
