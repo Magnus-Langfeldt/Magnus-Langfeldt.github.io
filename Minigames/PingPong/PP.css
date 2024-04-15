@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-image: url("../../Media/Minigames/PingPong/PingPong3.png");
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#bakgrunn {
+    background-color: darkslategray;
+    border: 5px solid black;
+    border-right: 5px solid darkred;
+    border-left: 5px solid darkred;
+    margin: 10px;
+   /*  margin-top: 15%; */
+}
+
+h2 {
+    background-color: white;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+#main-border {
+    border: 4px solid black;
+    background-color: white;
+    margin: 20px;
+    height: fit-content;
+    max-width: 736px;
+    padding: 40px;
+}
+#main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+#leftPlayer {
+    margin: auto 5px;
+}
+
+#rightPlayer {
+    margin: auto 5px;
+}
+
+.controls {
+    font-size: 20px;
+    margin: 0 auto;
+    gap: 0px;
+    display: flex;
+}
+.controls {
+    text-align: left; 
+}
+#controls {
+    display: Grid;
+    grid-template-columns: 1fr;
+}
+.fa-arrow-up {
+    margin: auto auto;
+    font-size: 40px;
+}
+.fa-arrow-down {
+    margin: auto auto;
+    font-size: 40px;
+}

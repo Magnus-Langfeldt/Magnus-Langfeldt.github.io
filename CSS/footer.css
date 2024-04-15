@@ -1,0 +1,151 @@
+/*Container for the footer*/
+footer {
+    background-color: rgb(75, 75, 75);
+    color: white;
+    border-top: 5px solid black;
+    padding: 50px;
+  }
+  
+  /*Container for the items in the footer*/
+  section-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "about-us subscribe"
+    "contact-us ."
+    "quick-links ."
+    "follow-us .";
+  }
+  
+  /*Container for individual items in the footer*/
+  article-footer {
+    padding: 30px;
+    width: 410px;
+  }
+  
+  /*Generel styling*/
+  .title-footer {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  footer * {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /*Contact us section*/
+  .contact-us {
+    grid-area: contact-us;
+  }
+  
+  /*Subscribe section*/
+  .subscribe {
+    grid-area: subscribe;
+  }
+  
+  input {
+    border: 1.5px black solid;
+    background-color: white;
+    padding: 8px 60px 8px 16px;
+    border-radius: 10px;
+  }
+  
+  .subscribe-button {
+    border: 1.5px black solid;
+    border-radius: 10px;
+    margin-left: 0px;
+    font-size: 13px;
+    background-color: rgb(70, 70, 70);
+    color: white;
+    font-weight: bold;
+    padding: 8px 8px;
+  }
+  
+  .subscribe-button:hover {
+    background-color: rgb(136, 136, 136);
+    color: rgb(0, 0, 0);
+  }
+  
+  /*About us section*/
+  .about-us {
+    grid-area: about-us;
+  }
+  
+  /*Quick links section*/
+  .quick-links {
+    grid-area: quick-links;
+  }
+  
+  .links {
+    color:white;
+  }
+  
+  .footer-list {
+    list-style: none;
+  }
+  
+  .footer-list-item {
+    margin-bottom: 5px;
+    text-decoration: underline;
+  }
+  
+  /*Follow us section*/
+  .follow-us {
+    grid-area: follow-us;
+  }
+  
+  .icon > img {
+    width: 50px; 
+    margin-right: 30px;
+  }
+  
+  /*Copyrigth text*/
+  .footer-copyright {
+    margin-left: 30px;
+  }
+  
+  /*Screen between 0px and 440px*/
+  @media (max-width: 439px) {
+    footer {
+      padding: 20px;
+    }
+  
+    section-footer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "about-us"
+      "subscribe"
+      "quick-links"
+      "contact-us"
+      "follow-us";
+    }
+  
+    article-footer {
+      padding: 30px;
+      width: 100%;
+    }
+  
+    input {
+      padding: 8px 30px 8px 16px;
+    }
+  }
+  
+  /*Screen between 440px and 930px*/
+  @media (min-width: 440px) and (max-width: 930px) {
+    footer {
+      padding: 35px;
+    }
+  
+    section-footer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+      "about-us"
+      "subscribe"      
+      "quick-links"
+      "contact-us"
+      "follow-us";
+    }
+  }

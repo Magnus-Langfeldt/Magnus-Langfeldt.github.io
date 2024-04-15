@@ -3,47 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizza-bestilling</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="Stylesheet" href="./CSS/navbar.css">
+    <link rel="Stylesheet" href="./CSS/Index.css">
+    <link rel="Stylesheet" href="./CSS/footer.css">
+    
 </head>
 <body>
-    <form>
-    <h1>Pizza</h1>
-    <h2>Pizzabestilling</h2>
-        <div class="pick-container">
-            <h3>Type pizzabunn</h3>
-            <div class="box">
-                <label><input type="radio" name="q1" checked> Vanlig</label>
-                <label><input type="radio" name="q1"> Fullkorn</label>
-                <label><input type="radio" name="q1"> Glutenfri</label>
-            </div>
+    <header>
+        <nav1>
+          <a href="index.html">Home</a>
+          <i class="fa-solid fa-bars"></i>
+        </nav1>
+        <nav2>
+          <a href="sites/main sites/pc-components.html">PC-components</a>
+          <a href="sites/main sites/creator.html">Creators</a>
+          <a href="sites/main sites/sources.html">Sources</a>
+        </nav2>
+      </header>
+      <main>
+        <div id="image">
+        <div id="margin-boks">
+        <div id="intro">
+            <h1>PlaySenter</h1>
+            <h2>-a place for everyone</h2>
         </div>
-        <div class="pick-container">
-            <h3>Topping</h3>
-            <div class="box">
-                <label><input type="checkbox" name ="p1" value="skinke"> Skinke</label>
-                <label><input type="checkbox" name ="p2" value="ost"> Ost</label>
-                <label><input type="checkbox" name ="p3" value="pepperoni"> Pepperoni</label>
-                <label><input type="checkbox" name ="p4" value="ananas"> Ananas</label>
-                <label><input type="checkbox" name ="p5" value="jalepeno"> Jalepeno</label>
-            </div>
         </div>
-        <div class="pick-container">
-            <h3>Størrelse</h3>
-            <select id="storrelse">
-                <option value="ingen" selected>Velg</option>
-                <option value="liten">Liten</option>
-                <option value="medium">Medium</option>
-                <option value="stor">Stor</option>
-            </select>
+        <div id="introducingText">
+        <p>Nettsiden er dedikert til å bringe deg en samling av enkle, pixel-baserte spill som vil ta deg på en nostalgisk reise gjennom spillhistorien. Fra de ikoniske eventyrene til Mario til de intense pingpong-duellene, vår samling av spill er kuratert med kjærlighet og omsorg for å gi deg den ultimate gaming-opplevelsen.</p>
+        <p>Enten du ønsker å utforske de tidlige dagene av gaming eller bare ønsker å gjenoppleve de magiske øyeblikkene fra fortiden, vil PlaySenter være din trofaste følgesvenn på denne spennende reisen. Med vårt brukervennlige grensesnitt kan du enkelt bla gjennom vårt varierte utvalg av spill og finne akkurat det du leter etter.</p>
+        <p> PlaySenter handler ikke bare om å gjenoppleve fortiden - det handler også om å skape nye minner og opplevelser. Inviter venner og familie til å delta i utfordrende spillkonkurranser, eller ta en tur nedover memory lane alene mens du utforsker vårt rikholdige bibliotek. Uansett om du er en dedikert gamer eller bare en tilfeldig spiller, er PlaySenter det ideelle stedet å utforske verdenen av pixelbasert gaming. La oss sammen utforske historien, skape nye minner og feire den fantastiske arven til disse tidløse spillene. Enten du er en erfaren gamer som ønsker å gjenoppleve de gode gamle dagene, eller en nybegynner som ønsker å utforske de enkle gledene ved retrospill, har vi noe for enhver smak. Fra plattformspill til arkadespill, fra puslespill til eventyrspill, vårt utvalg av spill vil utfordre og underholde deg i timevis.</p>
         </div>
-        <div class="pick-container">
-            <h3>Annet</h3>
-            <textarea id="text" name="textbox" rows="4" cols="50" placeholder="Skriv en tilbakemelding."></textarea>
+<div id="velg-spill">
+    <div id="catchMario">
+    <a href="./Minigames/Whack-a-Mole/WAM.html">
+        <div id="mario" id="marioGame">
+            <h3 id="mario-text">Catch Mario</h3>
         </div>
-    <button>Send inn din bestilling</button>
-    </form>
+    </a>
+    <p><b>"Catch Mario"</b>, tar det klassiske konseptet fra "Whack-a-Mole" og gir det en spennende vri.                    
+    Forvent å se ikoniske figurer som Mario hoppe ut av hullene, og det er opp til deg å klikke på dem for å score poeng. Men vær oppmerksom på at blant Mario-figurene kan det også dukke opp bomber, og hvis du klikker på en bombe, vil det være spill over!</p>
+    </div>
+    <div id="playPong">
+    <a href="./Minigames/PingPong/PP.html">
+        <div id="PingPong">
+            <h3 id="PingPong-text">PingPong</h3>
+        </div>
+    </a>
+    <p>Welcome to <b>"Classic PingPong!"</b>
 
-    <script src="script.js"></script>
+        Get ready to test your reflexes and agility in this timeless arcade classic. Control your paddle and outmaneuver your opponent to score points. With simple controls and addictive gameplay, it's a game that anyone can enjoy!
+        <br>
+        <br>
+        Hit the ball past your opponent's paddle to score points.
+        Be quick and precise to outsmart your opponent and win the game.
+        Are you ready to take on the challenge and emerge victorious? Let the PingPong battle begin!</p>
+    </div>
+    <div id="questionS">
+    <a href="./Minigames/Solve the Riddle/riddle.html">
+        <div id="Puzzle">
+            <h3 id="Puzzle-text">Solve the Questions</h3>
+        </div>
+    </a>
+    <p>Prepare your mind for an exciting challenge in <b>"Solve the Questions!"</b> In this mini-game, you'll be presented with a series of random questions spanning various topics like geography, film and TV, arts and literature, or even history! Test your knowledge and see how many questions you can answer correctly!
+    <br><br>
+    Remember to read the questions carefully!</p>
+</div>
+</main>
+<footer>
+    <section-footer>
+      <article-footer class="contact-us">
+          <p class="title-footer">Contact Us</p>
+          <p>Email: magnus.langfeldt@gmail.com</p>
+
+          <p>Phone: +47 954 90 926</p>
+          <p style="margin-top: 30px;">Email: leo.fredenborg@gmail.com</p>
+          <p>Phone: +47 904 19 408</p>
+      </article-footer>
+
+      <article-footer class="subscribe">
+          <div>
+              <div class="title-footer">Subscribe to our Newsletter:</div>
+              <input name="email" type="email" placeholder="Your email address">
+              <button class="subscribe-button">Subscribe</button>
+          </div>
+      </article-footer>
+
+      <article-footer class="about-us">
+          <p class="title-footer">About Us</p>
+          <p>We are two Nadderud High School students with a passion for technology and a shared curiosity about the inner workings of computers. Our website is a gateway to demystify computer hardware, making it accessible to everyone.</p>
+      </article-footer>
+
+      <article-footer class="quick-links">
+          <p class="title-footer">Quick Links</p>
+          <ul class="footer-list">
+              <li class="footer-list-item"><a href="index.html" class="links">Home</a></li>
+              <li class="footer-list-item"><a href="sites/main sites/pc-components.html" class="links">PC-components</a></li>
+              <li class="footer-list-item"><a href="sites/main sites/creator.html" class="links">Creator</a></li>
+              <li class="footer-list-item"><a href="sites/main sites/sources.html" class="links">Sources</a></li>
+          </ul>
+      </article-footer>
+
+      <article-footer class="follow-us">
+          <p class="title-footer">Follow Us</p>
+          <div class="social-icons">
+            <a href="#" class="icon"><img src="pictures/footer/facebook.png" alt="Facebook" title="Facebook"></a>
+            <a href="#" class="icon"><img src="pictures/footer/twitter.png" alt="Twitter" title="Twitter"></a>
+            <a href="#" class="icon"><img src="pictures/footer/instagram.png" alt="Instagram" title="Instagram"></a>
+          </div>
+      </article-footer>
+    </section-footer>
+    <p class="footer-copyright">&copy; 2023 HardwareExplained. All rights reserved.</p>
+  </footer>
+    
+    <script src="./Javascript/navbar.js"></script>
+    <script src="./Javascript/Index.js"></script>
 </body>
 </html>
