@@ -182,7 +182,7 @@ function sjekkSvar() {
                 console.log("Wrong Answer!")
                 quizContainerEl.style.backgroundColor = "darkred"
                 quizContainerEl.style.color = "white"
-
+                
                 // Øker variabelen for antall ganger du har svart feil
                 j++
 
@@ -206,6 +206,9 @@ function sjekkSvar() {
         }
     }
     
+    // Markerer svaret som var riktig
+    document.querySelector('input[value="c"]').checked = true
+
     // Nødvendig styling
     checkBtn.style.display = "none"
     nextBtn.style.display = "block"
