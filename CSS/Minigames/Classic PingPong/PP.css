@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -7,8 +13,6 @@ body {
     background-image: linear-gradient(rgba(183, 29, 29, 0.674), rgba(22, 65, 236, 0.5));
     min-height: 100vh;
     background-size: cover;
-    margin: 0;
-    padding: 0;
 }
 
 canvas {
@@ -27,6 +31,8 @@ h1 {
     color: white;
     text-shadow: 2px 2px 2px black;
     font-size: 50px;
+    margin: 40px;
+    margin-bottom: 30px;
 }
 
 body > div > h3 {
@@ -34,7 +40,7 @@ body > div > h3 {
     color: white;
     background-color: rgb(49, 53, 53);
     width: fit-content;
-    padding: 15px;
+    padding: 12px;
     margin: 0 auto;
     display: none;
 }
@@ -69,6 +75,10 @@ body > div {
     width: fit-content;
     padding: 15px;
     grid-area: right-player;
+}
+
+#leftPlayer *, #rightPlayer * {
+    margin: auto auto;
 }
 
 .controls {
@@ -110,9 +120,8 @@ body > div {
     margin: 10px auto auto auto;
 }
 @media (max-width: 1024px) {
-
     h1 {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
     }
 
     body > div > h3 {
@@ -177,14 +186,22 @@ body > div {
 }
 
 @media (max-width: 756px) {
+    canvas {
+        width: 300px;
+        height: 300px;
+        margin: auto auto;
+    }
+    button {
+        margin: 10px;
+    }
+}
+@media (max-width: 544px) {
     #main {
         grid-template-areas: 
         'canvas canvas' 
         'right-player left-player';
     }
-    canvas {
-        width: 300px;
-        height: 300px;
-        margin: auto auto;
+    .down {
+        margin-top: 5px;
     }
 }

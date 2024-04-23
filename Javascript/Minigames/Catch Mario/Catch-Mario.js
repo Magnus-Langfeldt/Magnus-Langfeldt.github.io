@@ -7,7 +7,7 @@ let score = 0;
 // lager en boolsk variabel som forteller om det er "Game Over" eller ikke
 let gameOver = false;
 
-let btnEl = document.getElementById('btn')
+let btnEl = document.querySelector('button')
 
 // legger til en lytter på btnEl, med en funksjon som laster inn nettsiden på nytt
 btnEl.addEventListener('click', function(){
@@ -59,7 +59,7 @@ function setMario() {
     let mario = document.createElement('img');
     mario.src = "../../Media/Minigames/Catch-Mario/Mario-jumping.png"
     mario.id = "mario"
-    mario.style.marginTop = "40px"
+    mario.style.marginTop = "30px"
 
     // Legger til en lytter for når du klikker på mario
     mario.addEventListener('click', selectTile)
@@ -102,7 +102,7 @@ function setBomb() {
     let bombEl = document.createElement('img')
     bombEl.src = "../../Media/Minigames/Catch-Mario/bomb.png"
     bombEl.id = "bomb"
-    bombEl.style.marginTop = "30px"
+    bombEl.style.marginTop = "20px"
 
     // Legger til en lytter for når du klikker på bomben
     bombEl.addEventListener('click', selectTile)
@@ -144,11 +144,11 @@ function selectTile(e) {
         // Hvis elementet som ble trykket på er en bombe, taper du.
         console.log(`It seems like you lost! you got ${score} points!`)
         document.getElementById('points').innerHTML = `
-        <h3>You Lost!</h3>
+        <h2 style="margin-left: 0">You Lost!</h2>
         <h4>You successfully clicked on <br>mario ${score} times, and your best score is ${localStorage.highscore}.
         `
 
-        document.getElementById('board').style.borderColor = "red"
+        document.getElementById('board').style.borderColor = "darkred"
         document.getElementById('points').style.backgroundColor = "darkred"
         document.getElementById('points').style.color = "white"
         document.getElementById('points').style.gap = "0"

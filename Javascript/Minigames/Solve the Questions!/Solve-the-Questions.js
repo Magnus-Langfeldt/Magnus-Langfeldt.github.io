@@ -20,7 +20,7 @@ let j = 0
 nextBtn.addEventListener('click', questions)
 checkBtn.addEventListener('click', sjekkSvar)
 
-document.addEventListener('keydown', cheat)
+document.addEventListener('keyup', cheat)
 
 function cheat(e) {
     if (e.code === "KeyC") {
