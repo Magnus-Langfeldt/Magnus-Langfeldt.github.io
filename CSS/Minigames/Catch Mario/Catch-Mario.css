@@ -36,7 +36,7 @@ h1 {
     margin-right: 20px;
     display: flex;
     flex-wrap: wrap;
-    background: url("../../../Media/Minigames/Catch-Mario/wall2.jpeg");
+    background: url("../../../Media/Minigames/Catch-Mario/wall.jpeg");
     background-size: cover;
     border: 15px solid white;
     border-radius:25px;
@@ -47,7 +47,7 @@ h1 {
     /* board = 540x540, delt på 3x3 tiler -->180x180 per div */
     width: 180px;
     height: 180px;
-    background-image: url("../../../Media/Minigames/Catch-Mario/hole2.png");
+    background-image: url("../../../Media/Minigames/Catch-Mario/hole.png");
     background-size: cover;
 }
 

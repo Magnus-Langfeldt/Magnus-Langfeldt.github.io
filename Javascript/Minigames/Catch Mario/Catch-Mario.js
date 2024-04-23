@@ -57,7 +57,7 @@ function setMario() {
     // Lager et img element av mario, som skal plasseres tilfeldig blant div-elementene
     /* console.log("Creating an image of mario") */
     let mario = document.createElement('img');
-    mario.src = "../../Media/Minigames/Catch-Mario/Mario-jumping1.png"
+    mario.src = "../../Media/Minigames/Catch-Mario/Mario-jumping.png"
     mario.id = "mario"
     mario.style.marginTop = "40px"
 
