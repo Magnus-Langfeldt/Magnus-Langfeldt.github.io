@@ -4,12 +4,14 @@
     box-sizing: border-box;
     text-align: center;
 }
+
 h1, h2 {
     text-shadow: 2px 2px 1px black;
 }
 body {
-    background-color: rgb(63, 63, 63);
+    background: linear-gradient(rgba(20, 14, 57, 0.852), rgba(93, 120, 228, 0.6));
 }
+
 #mario {
     background-image: linear-gradient(rgba(0, 20, 98, 0.1), rgba(4,9,30,0.5)), url("../Media/Index/Mario.png");
     background-position: center;
@@ -45,25 +47,23 @@ body {
     text-shadow: 2px 2px 0px black;
 }
 
-#mario:hover {
+#mario:hover, #mario:active {
     width: 90%;
-    /*filter: grayscale(20%)*/
-    /* background: rgba(100, 100, 100, 0.7); */
-    background-image: linear-gradient(rgba(4,9,30,0.6), rgba(4,9,30,0.6)), url("../Media/Index/Mario.png");
+    background-image: linear-gradient(rgba(23, 20, 51, 0.674), rgba(255, 0, 0, 0.5)), url("../Media/Index/Mario.png");
     transition: 0.5s;
 }
-#PingPong:hover {
+#PingPong:hover, #PingPong:active {
     width: 90%;
     /*filter: grayscale(20%)*/
     /* background: rgba(100, 100, 100, 0.7); */
-    background-image: linear-gradient(rgba(4,9,30,0.6), rgba(4,9,30,0.6)), url("../Media/Index/PingPong.jpeg");
+    background-image: linear-gradient(rgba(23, 20, 51, 0.674), rgba(255, 0, 0, 0.5)), url("../Media/Index/PingPong.jpeg");
     transition: 0.5s;
 }
-#Puzzle:hover {
+#Puzzle:hover, #Puzzle:active {
     width: 90%;
     /*filter: grayscale(20%)*/
     /* background: rgba(100, 100, 100, 0.7); */
-    background-image: linear-gradient(rgba(4,9,30,0.6), rgba(4,9,30,0.6)), url("../Media/Index/Question.jpeg");
+    background-image: linear-gradient(rgba(23, 20, 51, 0.674), rgba(255, 0, 0, 0.5)), url("../Media/Index/Question.jpeg");
     transition: 0.5s;
 }
 #velg-spill a {
@@ -119,28 +119,23 @@ h1 {
     display: flex;
     justify-content: center;
 }
-#image p {
-    margin: 20px 60px 0 60px;
-    padding-bottom: 20px;
-    font-size: 20px;
-}
-#image {
-    background: linear-gradient(rgba(20, 14, 57, 0.6), rgba(93, 120, 228, 0.6));
-    margin: 0;
-    padding-bottom:20px;
-}
+
 #gray-area p {
     font-size: 20px;
     padding: 0 20px;
 }
 #introducingText {
     border: 3px solid black;
-    background-color: whitesmoke;
     border-radius: 15px;
     padding: 20px;
     margin: 50px;
     margin-left: 15%;
     margin-right: 15%;
+}
+#introducingText, #velg-spill > div > p {
+    background-color: rgba(51, 51, 51, 0.663);
+    color: white;
+    font-size: 20px
 }
 #introducingText > p {
     text-align: left;
@@ -152,14 +147,41 @@ h1 {
 }
 #velg-spill > div > p {
     border: 3px solid black;
-    background-color: whitesmoke;
+/*     background-color: whitesmoke; */
     border-radius: 15px;
     width: 90%;
+    height: 430px;
     margin: 10px auto;
-    color: black;
+  /*   color: black; */
     padding: 20px;
     text-align: left;
 }
+#velg-spill > div > a > div > h3 {
+    font-size: 200%;
+}
 #velg-spill h3 {
     color: white;
+}
+
+@media (max-width: 1100px) {
+    #introducingText > p {
+        margin: 5px;
+        font-size: 100%;
+    }
+    #velg-spill > div > p {
+        font-size: 100%;
+    }
+}
+@media (max-width: 785px) {
+    #velg-spill {
+        grid-template-columns: 1fr;
+        width: fit-content;
+    }
+    #velg-spill > div {
+        width: 70%;
+        margin: 0 auto;
+    }
+    #velg-spill > div > p {
+        height: fit-content;
+    }
 }

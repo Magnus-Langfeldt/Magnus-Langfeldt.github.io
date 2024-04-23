@@ -1,0 +1,190 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: gray;
+    background-image: linear-gradient(rgba(183, 29, 29, 0.674), rgba(22, 65, 236, 0.5));
+    min-height: 100vh;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    background-color: darkslategray;
+    border: 5px solid black;
+    margin: 10px;
+    grid-area: canvas;
+}
+
+h2 {
+    background-color: white;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+h1 {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 50px;
+}
+
+body > div > h3 {
+    border: 5px solid black;
+    color: white;
+    background-color: rgb(49, 53, 53);
+    width: fit-content;
+    padding: 15px;
+    margin: 0 auto;
+    display: none;
+}
+.controls > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body > div {
+    gap: 20px;
+}
+#main {
+    display: grid;
+    grid-template-areas: 'left-player canvas canvas right-player';
+}
+
+#leftPlayer {
+    margin: auto 0 auto auto;
+    border: 5px solid black;
+    color: white;
+    background-color: rgb(49, 53, 53);
+    width: fit-content;
+    padding: 15px;
+    grid-area: left-player;
+}
+
+#rightPlayer {
+    margin: auto auto auto 0;
+    border: 5px solid black;
+    color: white;
+    background-color: rgb(49, 53, 53);
+    width: fit-content;
+    padding: 15px;
+    grid-area: right-player;
+}
+
+.controls {
+    font-size: 20px;
+    margin: 0 auto;
+    gap: 10px;
+    display: flex;
+    text-align: left;
+}
+#controls {
+    display: Grid;
+    grid-template-columns: 1fr;
+}
+.fa-arrow-up {
+    margin: auto auto;
+    font-size: 40px;
+}
+.fa-arrow-down {
+    margin: auto auto;
+    font-size: 40px;
+}
+.btn {
+    display: none;
+}
+#left-up {
+    grid-area: left-up;
+}
+#left-down {
+    grid-area: left-down;
+}
+#right-up {
+    grid-area: right-up;
+}
+#right-down {
+    grid-area: right-down;
+}
+body > div {
+    height: fit-content;
+    margin: 10px auto auto auto;
+}
+@media (max-width: 1024px) {
+
+    h1 {
+        margin-bottom: 10px;
+    }
+
+    body > div > h3 {
+        display: flex;
+        gap: 35px;
+        border-bottom: none;
+    }
+    #leftPlayer, #rightPlayer {
+        display: none;
+    }
+    #main {
+        grid-template-areas: 
+        'left-player canvas canvas right-player';
+    }
+    #buttons {
+        margin: 20px auto;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+    .btn {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .btn * {
+        padding: 20px;
+        font-size: 70px;
+        border-radius: 30px;
+        background-color: darkslateblue;
+        color: white;
+    }
+    .up, .down {
+        border: 10px solid black;
+    }
+    canvas {
+        margin-top: 0;
+    }
+}
+@media (max-width: 869px) {
+    #main {
+        grid-template-areas: 
+        'left-player canvas canvas right-player';
+    }
+    button {
+        margin-top: 30px;
+    }
+    .btn * {
+        font-size: 50px;
+        padding: 10px;
+    }
+    .btn {
+        gap: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 756px) {
+    #main {
+        grid-template-areas: 
+        'canvas canvas' 
+        'right-player left-player';
+    }
+    canvas {
+        width: 300px;
+        height: 300px;
+        margin: auto auto;
+    }
+}
