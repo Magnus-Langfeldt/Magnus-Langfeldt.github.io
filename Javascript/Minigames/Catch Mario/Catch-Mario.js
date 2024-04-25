@@ -145,7 +145,7 @@ function selectHole(e) {
         console.log(`It seems like you lost! you got ${score} points!`)
         document.getElementById('points').innerHTML = `
         <h2 style="margin-left: 0">You Lost!</h2>
-        <h4>You successfully clicked on <br>mario ${score} times, and your best score is ${localStorage.highscore}.
+        <h4>You successfully clicked on <br>mario ${score} times, and your best score is ${localStorage.highscore}.</h4>
         `
 
         document.getElementById('board').style.borderColor = "darkred"
