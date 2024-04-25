@@ -8,104 +8,57 @@
 
 h1, h2 {
     text-shadow: 2px 2px 1px black;
+    color: white;
 }
 body {
     background: linear-gradient(rgba(20, 14, 57, 0.852), rgba(93, 120, 228, 0.6));
 }
 
-#mario {
-    background-image: linear-gradient(rgba(0, 20, 98, 0.1), rgba(4,9,30,0.5)), url("../Media/Index/Mario.png");
+#velg-spill > div > a > div {
     background-position: center;
     background-size: cover;
     border: 4px solid black;
     border-radius: 15px;
     transition: 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mario {
+    background-image: linear-gradient(rgba(0, 20, 98, 0.1), rgba(4,9,30,0.5)), url("../Media/Index/Mario.png");
 
 }
 #PingPong {
     background-image: linear-gradient(rgba(0, 20, 98, 0.1), rgba(4,9,30,0.5)), url("../Media/Index/PingPong.jpeg");
-    background-position: center;
-    background-size: cover;
-    border: 4px solid black;
-    border-radius: 15px;
-    transition: 0.5s;
 }
 #Puzzle {
     background-image: linear-gradient(rgba(0, 20, 98, 0.1), rgba(4,9,30,0.5)), url("../Media/Index/Question.jpeg");
-    background-position: center;
-    background-size: cover;
-    border: 4px solid black;
-    border-radius: 15px;
-    transition: 0.5s;
 }
-#mario-text {
-    text-shadow: 2px 2px 0px black;
-}
-#PingPong-text {
-    text-shadow: 2px 2px 0px black;
-}
-#Puzzle-text {
+
+#velg-spill > div > a > div > h3 {
     text-shadow: 2px 2px 0px black;
 }
 
 #mario:hover, #mario:active {
-    width: 90%;
     background-image: linear-gradient(rgba(23, 20, 51, 0.674), rgba(255, 0, 0, 0.5)), url("../Media/Index/Mario.png");
-    transition: 0.5s;
 }
 #PingPong:hover, #PingPong:active {
-    width: 90%;
-    /*filter: grayscale(20%)*/
-    /* background: rgba(100, 100, 100, 0.7); */
     background-image: linear-gradient(rgba(23, 20, 51, 0.674), rgba(255, 0, 0, 0.5)), url("../Media/Index/PingPong.jpeg");
-    transition: 0.5s;
 }
 #Puzzle:hover, #Puzzle:active {
-    width: 90%;
-    /*filter: grayscale(20%)*/
-    /* background: rgba(100, 100, 100, 0.7); */
     background-image: linear-gradient(rgba(23, 20, 51, 0.674), rgba(255, 0, 0, 0.5)), url("../Media/Index/Question.jpeg");
-    transition: 0.5s;
 }
+
 #velg-spill a {
     text-decoration: none;
     margin: 20px 0;
 }
 
-#mario {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    aspect-ratio: 1 / 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#PingPong {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    aspect-ratio: 1 / 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-#Puzzle {
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%;
-    aspect-ratio: 1 / 1;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-h1, h2 {
-    color: white;
-}
 h1 {
     font-size: 50px;
     margin-top: 30px;
@@ -116,15 +69,11 @@ h1 {
     align-items: flex-start;
     justify-content: center;
 }
-#margin-boks {
+#margin-box {
     display: flex;
     justify-content: center;
 }
 
-#gray-area p {
-    font-size: 20px;
-    padding: 0 20px;
-}
 #introducingText {
     border: 3px solid black;
     border-radius: 15px;
@@ -132,6 +81,7 @@ h1 {
     margin: 50px;
     margin-left: 15%;
     margin-right: 15%;
+    line-height: 1.5;
 }
 #introducingText, #velg-spill > div > p {
     background-color: rgba(51, 51, 51, 0.663);
@@ -148,12 +98,10 @@ h1 {
 }
 #velg-spill > div > p {
     border: 3px solid black;
-/*     background-color: whitesmoke; */
     border-radius: 15px;
     width: 90%;
-    height: 430px;
+    height: 455px;
     margin: 10px auto;
-  /*   color: black; */
     padding: 20px;
     text-align: left;
 }

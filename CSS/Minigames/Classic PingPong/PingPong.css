@@ -22,11 +22,6 @@ canvas {
     grid-area: canvas;
 }
 
-h2 {
-    background-color: white;
-    margin-bottom: 0;
-    padding-bottom: 20px;
-}
 h1 {
     color: white;
     text-shadow: 2px 2px 2px black;
@@ -52,7 +47,7 @@ body > div > h3 {
 body > div {
     gap: 20px;
 }
-#main {
+main {
     display: grid;
     grid-template-areas: 'left-player canvas canvas right-player';
 }
@@ -88,36 +83,21 @@ body > div {
     display: flex;
     text-align: left;
 }
-#controls {
-    display: Grid;
-    grid-template-columns: 1fr;
-}
-.fa-arrow-up {
+
+.fa-solid {
     margin: auto auto;
     font-size: 40px;
 }
-.fa-arrow-down {
-    margin: auto auto;
-    font-size: 40px;
-}
-.btn {
+
+.btns {
     display: none;
-}
-#left-up {
-    grid-area: left-up;
-}
-#left-down {
-    grid-area: left-down;
-}
-#right-up {
-    grid-area: right-up;
-}
-#right-down {
-    grid-area: right-down;
 }
 body > div {
     height: fit-content;
     margin: 10px auto auto auto;
+}
+button {
+    cursor: pointer;
 }
 @media (max-width: 1024px) {
     h1 {
@@ -132,20 +112,11 @@ body > div {
     #leftPlayer, #rightPlayer {
         display: none;
     }
-    #main {
+    main {
         grid-template-areas: 
         'left-player canvas canvas right-player';
     }
-    #buttons {
-        margin: 20px auto;
-        width: fit-content;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 80px;
-    }
-    .btn {
+    .btns {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -153,7 +124,7 @@ body > div {
         align-items: center;
         
     }
-    .btn * {
+    .btns * {
         padding: 20px;
         font-size: 70px;
         border-radius: 30px;
@@ -168,18 +139,14 @@ body > div {
     }
 }
 @media (max-width: 869px) {
-    #main {
-        grid-template-areas: 
-        'left-player canvas canvas right-player';
-    }
     button {
         margin-top: 30px;
     }
-    .btn * {
+    .btns * {
         font-size: 50px;
         padding: 10px;
     }
-    .btn {
+    .btns {
         gap: 0;
         margin-bottom: 30px;
     }
@@ -196,7 +163,7 @@ body > div {
     }
 }
 @media (max-width: 544px) {
-    #main {
+    main {
         grid-template-areas: 
         'canvas canvas' 
         'right-player left-player';

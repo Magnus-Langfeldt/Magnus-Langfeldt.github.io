@@ -33,9 +33,9 @@ function setGame() {
     // Lager diver i #board som skal bli hullene. 
     for (let i=0; i<9; i++) {
         console.log(`Making div with id=${i}`)
-        let tile = document.createElement("div")
-        tile.id = i
-        document.getElementById('board').appendChild(tile)
+        let hole = document.createElement("div")
+        hole.id = i
+        document.getElementById('board').appendChild(hole)
     }
 
     // Setter intervaller for hvor ofte funksjonene skal kjøres, her settes det til 900 millisekunder
@@ -47,7 +47,7 @@ function setGame() {
 // Funksjon som setter Mario i et hull
 function setMario() {
     // Hvis det er "Game Over" skal ikke resten av funksjonen kjøres
-    if (gameOver === true) {
+    if (gameOver) {
         return
     }
     // Hvis marioHole allerede finnes, skal den tømmes slik at det kan lages et nytt hull for mario
@@ -59,10 +59,10 @@ function setMario() {
     let mario = document.createElement('img');
     mario.src = "../../Media/Minigames/Catch-Mario/Mario-jumping.png"
     mario.id = "mario"
-    mario.style.marginTop = "30px"
+    mario.style.marginTop = "25%"
 
     // Legger til en lytter for når du klikker på mario
-    mario.addEventListener('click', selectTile)
+    mario.addEventListener('click', selectHole)
 
     // Henter et tilfeldig tall fra funksjonen getRandomNumber
     number = getRandomNumber()
@@ -90,7 +90,7 @@ function getRandomNumber() {
 // Funksjon som setter en bombe i et hull
 function setBomb() {
     // Hvis det er "Game Over" skal ikke resten av funksjonen kjøres
-    if(gameOver === true) {
+    if(gameOver) {
         return
     }
     // Hvis bombHole allerede finnes, skal den tømmes slik at det kan lages et nytt hull for bomben
@@ -102,10 +102,10 @@ function setBomb() {
     let bombEl = document.createElement('img')
     bombEl.src = "../../Media/Minigames/Catch-Mario/bomb.png"
     bombEl.id = "bomb"
-    bombEl.style.marginTop = "20px"
+    bombEl.style.marginTop = "20%"
 
     // Legger til en lytter for når du klikker på bomben
-    bombEl.addEventListener('click', selectTile)
+    bombEl.addEventListener('click', selectHole)
     
     // Henter et tilfeldig tall fra funksjonen getRandomNumber
     let number = getRandomNumber()
@@ -125,16 +125,16 @@ function setBomb() {
 }
 
 // Lager en funksjon som sjekker hva du trykket på, der parameteren er hendelsen. 
-function selectTile(e) {
+function selectHole(e) {
     //Sjekker om det allerede er "Game Over", for da trenger ikke funksjonen å kjøres.
-    if (gameOver === true) {
+    if (gameOver) {
         return
     }
     // Sjekker om elementet som ble trykket på, har id-en "mario" (sjekker om du klikket på mario).
     if (e.target.id === "mario") {
         // Hvis elementet som ble trykket på er mario, skal du få et poeng.
         console.log("You clicked on Mario! You get +1 point!")
-        score+=1
+        score ++ // score+=1
         document.getElementById('score').innerHTML = `Your Points: ${score}`
         // For at du ikke skal kunne trykke flere ganger på samme element for å få ekstra poeng, skal den forsvinne. 
         marioHole.innerHTML = ""

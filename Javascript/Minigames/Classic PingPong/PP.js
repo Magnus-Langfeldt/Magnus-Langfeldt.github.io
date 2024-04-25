@@ -62,7 +62,7 @@ function update() {
     // spiller 1
     ctx.fillStyle = "white"
     let nextPlayer1Y = player1.y + player1.MovementY
-    if(outsideOfBorders(nextPlayer1Y) === false) {
+    if(outsideOfBorders(nextPlayer1Y)) {
         player1.y = nextPlayer1Y
     }
     // Tegner spiller 1
@@ -70,7 +70,7 @@ function update() {
 
     // spiller 2
     let nextPlayer2Y = player2.y + player2.MovementY
-    if (outsideOfBorders(nextPlayer2Y) === false) {
+    if (outsideOfBorders(nextPlayer2Y)) {
         player2.y = nextPlayer2Y
     }
 
@@ -87,12 +87,12 @@ function update() {
         ball.MovementY = ball.MovementY * -1
     }
 
-    if (detectCollision(ball, player1) === true) {
+    if (detectCollision(ball, player1)) {
         if (ball.x <= player1.x + player1.width) {
             ball.MovementX = ball.MovementX * -1 //endrer ballen sin retning langs x-aksen, men beholder farten.
         }
     }
-    else if (detectCollision(ball, player2) === true) {
+    else if (detectCollision(ball, player2)) {
         if (ball.x + ballWidth >= player2.x) {
             ball.MovementX = ball.MovementX * -1 //endrer ballen sin retning langs x-aksen, men beholder farten.
         }
@@ -121,7 +121,7 @@ function update() {
 
 // Funksjon som sjeker om spillerens høyde er mindre enn høyden av canvas eller større enn høyden av canvas
 function outsideOfBorders(yAxisPosition) {
-return (yAxisPosition < 0 || yAxisPosition + playerHeight > backgroundHeight)
+    return (yAxisPosition < 0 || yAxisPosition + playerHeight > backgroundHeight)
 }
 
 function movePlayer(e) {

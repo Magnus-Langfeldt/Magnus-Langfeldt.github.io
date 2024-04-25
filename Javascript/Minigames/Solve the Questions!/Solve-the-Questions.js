@@ -7,8 +7,6 @@ let quizContainerEl = document.querySelector('.quiz-container')
 let questionContainerEl = document.querySelector('.question-container')
 let checkBtn = document.getElementById ('checkBtn')
 
-
-
 let data = []
 let poeng = 0
 
@@ -26,10 +24,6 @@ function cheat(e) {
     if (e.code === "KeyC") {
         document.querySelector('input[value="c"]').checked = true
         console.log("cheating")
-    }
-    if (i<9) {
-        i++
-        poeng++
     }
 }
 
@@ -91,7 +85,9 @@ function questions(){
 
     // setter svaret blant alternativene
     console.log("Putting the correct answer among the wrong ones")
+
     options.splice(Math.floor(Math.random()*(options.length+1)), 0, solution)
+
     console.log(`Total Options: ${options[0]}, ${options[1]}, ${options[2]} and ${options[3]}`)
 
     // Tømmer HTML til quiz containeren
@@ -99,14 +95,14 @@ function questions(){
 
     // Fyller quiz-containeren med spørsmålet
     quizContainerEl.innerHTML = `
-    <div class="question-container" id="question">
+    <div class="question-container">
         <h3>- ${query}</h3>
     </div> 
     `
 
     // Skriver kode som fyller inn alternativene i HTML
     // Henter elementet alternativene skal skrives i
-    let questionEl = document.getElementById('question')
+    let questionEl = document.querySelector('.question-container')
 
     // Går gjennom alternativene
     for (let j=0;j<options.length;j++) {
@@ -174,6 +170,7 @@ function sjekkSvar() {
 
                 // Øker antall poeng du har
                 poeng++
+
                 console.log("Correct Answer!")
                 console.log(`You have ${poeng} point(s)!`)
             }

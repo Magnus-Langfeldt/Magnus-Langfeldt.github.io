@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PingPong</title>
-    <link rel="Stylesheet" href="../../CSS/Minigames/Classic PingPong/PP.css">
-    <link rel="Stylesheet" href="../../CSS/footer.css">
+
+    <link rel="Stylesheet" href="../../CSS/Minigames/Classic PingPong/PingPong.css">
+    <link rel="Stylesheet" href="../../CSS/Common css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="Stylesheet" href="../../CSS/navbar.css">
+    <link rel="Stylesheet" href="../../CSS/Common css/navbar.css">
 </head>
 <body>
     <header>
@@ -28,8 +29,8 @@
             <div class="controls"><div>W or K =</div><i class="fa-solid fa-arrow-up"></i></div>
             <div class="controls"><div>S or M =</div><i class="fa-solid fa-arrow-down"></i></div>
         </h3>
-        <div id="main">
-            <div class="btn" id="left-player">
+        <main>
+            <div class="btns">
                 <button class="up" id="upLeft"><i class="fa-solid fa-arrow-up" id="upLeft"></i></button>
                 <button class="down" id="downLeft"><i class="fa-solid fa-arrow-down" id="downLeft"></i></button>
             </div>
@@ -39,14 +40,14 @@
             </div>
             <canvas></canvas> 
             <div id="rightPlayer">
-                <div class="controls"> <i class="fa-solid fa-arrow-up"></i> <h3>= K</h3></div>
-                <div class="controls"> <i class="fa-solid fa-arrow-down"></i> <h3>= M</h3> </div>
+                <div class="controls"><i class="fa-solid fa-arrow-up"></i> <h3>= K</h3></div>
+                <div class="controls"><i class="fa-solid fa-arrow-down"></i> <h3>= M</h3> </div>
             </div>
-            <div class="btn" id="right-player">
+            <div class="btns">
                 <button class="up" id="upRight"><i class="fa-solid fa-arrow-up" id="upRight"></i></button>
                 <button class="down" id="downRight"><i class="fa-solid fa-arrow-down" id="downRight"></i></button>
             </div>
-        </div>
+        </main>
     </div>
     <footer>
         <section-footer>
@@ -58,8 +59,11 @@
     
           <article-footer class="sources">
               <p class="title-footer">Sources:</p>
+              <p class="sourceKind"><b>Inspiration:</b></p>
               <ul>
-                <li>No image sources</li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=LTtfoyHxAVU">https://www.youtube.com/watch?v=LTtfoyHxAVU</a>
+                </li>
               </ul>
           </article-footer>
     
@@ -77,6 +81,6 @@
     </footer>
 
     <script src="../../Javascript/Minigames/Classic PingPong/PP.js"></script>
-    <script src="../../Javascript/navbar.js"></script>
+    <script src="../../Javascript/Navbar/navbar.js"></script>
 </body>
 </html>
