@@ -81,12 +81,12 @@ h1 {
     margin: 50px;
     margin-left: 15%;
     margin-right: 15%;
-    line-height: 1.5;
 }
 #introducingText, #velg-spill > div > p {
     background-color: rgba(51, 51, 51, 0.663);
     color: white;
-    font-size: 20px
+    font-size: 20px;
+    line-height: 1.5;
 }
 #introducingText > p {
     text-align: left;
@@ -100,7 +100,7 @@ h1 {
     border: 3px solid black;
     border-radius: 15px;
     width: 90%;
-    height: 455px;
+    height: 600px;
     margin: 10px auto;
     padding: 20px;
     text-align: left;
