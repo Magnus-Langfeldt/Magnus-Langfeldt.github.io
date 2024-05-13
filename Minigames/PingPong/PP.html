@@ -5,20 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PingPong</title>
 
-    <link rel="Stylesheet" href="../../CSS/Minigames/Classic PingPong/PingPong.css">
-    <link rel="Stylesheet" href="../../CSS/Common css/footer.css">
+    <link rel="Stylesheet" href="./PingPong.css">
+    <link rel="Stylesheet" href="../../Common CSS/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="Stylesheet" href="../../CSS/Common css/navbar.css">
+    <link rel="Stylesheet" href="../../Common CSS/navbar.css">
 </head>
 <body>
     <header>
         <nav1>
-          <a href="../../Index.html">Home</a>
+          <a href="../../Index/Index.html">Home</a>
           <i class="fa-solid fa-bars"></i>
         </nav1>
         <nav2>
           <a href="../Catch Mario/Catch-Mario.html" id="navMario">Catch Mario</a>
-          <a href="../PingPong/PP.html" id="navPong">PingPong</a>
+          <a href="./PP.html" id="navPong">PingPong</a>
           <a href="../Solve the Questions/Solve-the-Questions.html" id="navSolve">Solve the Questions</a>
         </nav2>
     </header>
@@ -35,12 +35,12 @@
                 <button class="down" id="downLeft"><i class="fa-solid fa-arrow-down" id="downLeft"></i></button>
             </div>
             <div id="leftPlayer">
-                <div class="controls"><h3>W =</h3><i class="fa-solid fa-arrow-up"></i></div>
+                <div class="controls" style="margin-bottom: 50px;"><h3>W =</h3><i class="fa-solid fa-arrow-up"></i></div>
                 <div class="controls"><h3>S =</h3><i class="fa-solid fa-arrow-down"></i></div>
             </div>
             <canvas></canvas> 
             <div id="rightPlayer">
-                <div class="controls"><i class="fa-solid fa-arrow-up"></i> <h3>= K</h3></div>
+                <div class="controls" style="margin-bottom: 50px;"><i class="fa-solid fa-arrow-up"></i> <h3>= K</h3></div>
                 <div class="controls"><i class="fa-solid fa-arrow-down"></i> <h3>= M</h3> </div>
             </div>
             <div class="btns">
@@ -49,6 +49,7 @@
             </div>
         </main>
     </div>
+    <h3 id="winText"></h3>
     <footer>
         <section-footer>
           <article-footer class="contact-us">
@@ -70,17 +71,25 @@
           <article-footer class="quick-links">
               <p class="title-footer">Quick Links</p>
               <ul class="footer-list">
-                    <li class="footer-list-item"><a href="../../Index.html" class="links">Home</a></li>
-                    <li class="footer-list-item"><a href="../Catch Mario/Catch-Mario.html" class="links">Catch Mario</a></li>
-                    <li class="footer-list-item"><a href="../PingPong/PP.html" class="links">PingPong</a></li>
-                    <li class="footer-list-item"><a href="../Solve the Questions/Solve-the-Questions.html" class="links">Solve the Question</a></li>
+                    <li class="footer-list-item">
+                        <a href="../../Index/Index.html" class="links">Home</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="../Catch Mario/Catch-Mario.html" class="links">Catch Mario</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="./PP.html" class="links">PingPong</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="../Solve the Questions/Solve-the-Questions.html" class="links">Solve the Question</a>
+                    </li>
               </ul>
           </article-footer>
         </section-footer>
         <p class="footer-copyright">&copy; 2024 PlaySenter. All rights reserved.</p>
     </footer>
 
-    <script src="../../Javascript/Minigames/Classic PingPong/PP.js"></script>
-    <script src="../../Javascript/Navbar/navbar.js"></script>
+    <script src="./PP.js"></script>
+    <script src="../../Common Javascript/navbar.js"></script>
 </body>
 </html>
