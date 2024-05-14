@@ -125,7 +125,7 @@ input, label {
 }
 #resultat {
     font-size: 50px;
-    text-shadow: 2px 2px 2px darkgreen;
+    text-shadow: 2px 2px 2px black;
     padding: 30px;
     padding-bottom: 0;
 }
