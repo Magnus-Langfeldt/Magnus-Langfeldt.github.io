@@ -1,11 +1,11 @@
 // Definerer variabler slik at de blir globale
-let bombHole;
-let marioHole;
-let number;
-let score = 0;
+let bombHole
+let marioHole
+let number
+let score = 0
 
 // lager en boolsk variabel som forteller om det er "Game Over" eller ikke
-let gameOver = false;
+let gameOver = false
 
 let btnEl = document.querySelector('button')
 
@@ -55,8 +55,7 @@ function setMario() {
         marioHole.innerHTML = ""
     }
     // Lager et img element av mario, som skal plasseres tilfeldig blant div-elementene
-    /* console.log("Creating an image of mario") */
-    let mario = document.createElement('img');
+    let mario = document.createElement('img')
     mario.src = "../../Media/Minigames/Catch-Mario/Mario-jumping.png"
     mario.id = "mario"
     mario.style.marginTop = "25%"
@@ -71,7 +70,7 @@ function setMario() {
     if (bombHole && bombHole.id == number) {
         // Hvis bombHole allerede finnes og samtidig har samme id som number, skal funksjonen kjøres igjen, helt til de får forskjellige id-er.
         // Dette sørger for at mario og bomben ikke kommer i samme hull, samtidig.
-        console.log("The bomb has already got this hole.")
+        console.log("Mario tried to enter the bomb's hole.")
         setMario()
         return
     }
@@ -114,7 +113,7 @@ function setBomb() {
     if (marioHole && marioHole.id == number) {
         // Hvis marioHole allerede finnes og samtidig har samme id som number, skal funksjonen kjøres igjen, helt til de får forskjellige id-er.
         // Dette sørger for at mario og bomben ikke kommer i samme hull, samtidig.
-        console.log("Mario has already got this hole.")
+        console.log("The bomb tried to enter Mario's hole.")
         setBomb()
         return
     }

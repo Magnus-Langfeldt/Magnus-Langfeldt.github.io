@@ -16,7 +16,7 @@ let j = 0
 
 // Legger til en lytter på knappene
 nextBtn.addEventListener('click', questions)
-checkBtn.addEventListener('click', sjekkSvar)
+checkBtn.addEventListener('click', checkAnswer)
 
 document.addEventListener('keyup', cheat)
 
@@ -156,7 +156,7 @@ function questions(){
 }
 
 // Funksjon som sjekker om svaret er riktig eller feil
-function sjekkSvar() {
+function checkAnswer() {
     // Henter alle radio elementene 
     let radioEls = document.querySelectorAll('input[type="radio"]')
 
@@ -217,7 +217,7 @@ function sjekkSvar() {
 // Funksjon for når du har fått 3 feil eller har kommet gjennom alle 10 spørsmål.
 function gameOver() {
     // Erstatter innholdet i quiz containeren med en tilbakemelding basert på om du vant eller tapte
-    quizContainerEl.innerHTML = `<h3 id="resultat">${kontroll()}</h3>
+    quizContainerEl.innerHTML = `<h3 id="resultat">${control()}</h3>
     <h3 id=kommentar>Click on the button below to try again.`
 
     nextBtn.innerHTML = "Try again"
@@ -230,7 +230,7 @@ function gameOver() {
 }
 
 // Funksjon som avgjør hva som skal skrives hvis du har vunnet eller tapt i forrige funksjon.
-function kontroll() {
+function control() {
     if (j===3) {
         // Du tapte
         console.log("You lost")

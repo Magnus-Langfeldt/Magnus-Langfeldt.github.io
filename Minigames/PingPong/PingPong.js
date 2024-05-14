@@ -2,8 +2,8 @@
 // Henter canvas fra DOM 
 const canvas = document.querySelector('canvas')
 
-let backgroundWidth = 500;
-let backgroundHeight = 500;
+let backgroundWidth = 500
+let backgroundHeight = 500
 
 // ctx står for context
 let ctx = canvas.getContext("2d") // Trengs for å tegne på bakgrunnen
@@ -15,9 +15,9 @@ for (let i=0; i<btnEls.length; i++) {
 }
 
 // kode for spillere
-let playerWidth = 10;
-let playerHeight = 50;
-let playerMovementY = 0;
+let playerWidth = 10
+let playerHeight = 50
+let playerMovementY = 0
 
 let player1 = {
     x : 10,
@@ -45,8 +45,8 @@ let ball = {
     MovementY : 2
 }
 
-let player1Score = 0;
-let player2Score = 0;
+let player1Score = 0
+let player2Score = 0
 
 window.onload = function () {
     canvas.height = backgroundHeight
@@ -170,17 +170,21 @@ function movePlayer(e) {
     // Spiller 1
     if (e.code === "KeyW" || e.target.id === "upLeft") {
         player1.MovementY = -3
+        console.log("Moving player 1 up.")
     }
     else if (e.code === "KeyS" || e.target.id === "downLeft") {
         player1.MovementY = 3
+        console.log("Moving player 1 down.")
     }
 
     // Spiller 2
     if (e.code === "KeyK" || e.target.id === "upRight") {
         player2.MovementY = -3
+        console.log("Moving player 2 up.")
     }
     else if (e.code === "KeyM" || e.target.id === "downRight") {
         player2.MovementY = 3
+        console.log("Moving player 2 down.")
     }
 }
 
